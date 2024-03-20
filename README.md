@@ -1,4 +1,4 @@
-Шаблон для 2-гої роботи з архітектури ПЗ
+kpi-architecture-lab2
 ---
 
-Використайте кнопку **"Use this template"**, щоб створити власний репозиторій.
+Second kpi architecture lab by Pavlo Vlasiuk and Chernykova Daria
