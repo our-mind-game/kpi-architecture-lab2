@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	lab2 "github.com/our-mind-game/kpi-architecture-lab2"
+	"os"
 )
 
 var (
@@ -22,6 +23,10 @@ func main() {
 	//       }
 	//       err := handler.Compute()
 
-	res, _ := lab2.PrefixToPostfix("+ 2 2")
+	res, err := lab2.PostfixToPrefix("7 35 + 90 * *")
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+		os.Exit(1)
+	}
 	fmt.Println(res)
 }
