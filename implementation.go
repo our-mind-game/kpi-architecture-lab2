@@ -28,8 +28,12 @@ func pop(slice []string) (string, []string) {
 	return lastElem, poppedSlice
 }
 
-// TODO: document this function.
-// PrefixToPostfix converts
+// PostfixToPrefix converts postfix expression to prefix one.
+// Input is a string postfix expression.
+// Output is string prefix expression.
+// It will return an error if the provided expression is empty (" "),
+// written with incorrect symbols (5 5 : 2 *)
+// or written in invalid form (5 * 3 8 -).
 func PostfixToPrefix(expression string) (string, error) {
 	expression = strings.Trim(expression, " ")
 	if len(expression) == 0 {
