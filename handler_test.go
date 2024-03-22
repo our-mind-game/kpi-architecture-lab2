@@ -40,7 +40,7 @@ func (s *HandlerSuite) TestValidatingInput2(c *C) {
 		description: "Should return an error: invalid expression",
 		input:       "3 5 * 6 2 * 6",
 		output:      "",
-		error:       "empty expression",
+		error:       "invalid expression",
 	}
 
 	_, err := captureComputeOutput(testCase.input)
